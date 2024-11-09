@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Display</title>
+</head>
+<body>
+    <h1>Data from MySQL Table</h1>
+    <table>
+        <tr>
+            <th>Question</th>
+            <th>Answer</th>
+            <!-- Add other column headers -->
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.question }}</td>
+            <td>{{ item.correct_option }}</td>
+            <!-- Add other data fields -->
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
