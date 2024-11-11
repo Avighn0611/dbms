@@ -10,3 +10,4 @@ class DataForm(forms.Form):
     option4 = forms.CharField(label='Field 2', max_length=100)
 
     # Add more fields as needed
+

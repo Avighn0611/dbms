@@ -5,6 +5,7 @@ from .models import QuizQuestions
 from django.db import connection
 from .forms import DataForm
 
+
 # Create your views here.
 
 def index (request):
@@ -51,7 +52,4 @@ def add_data(request):
     return render(request, 'add_data.html', {'form': form})
 
 
-
-
-
-
+#

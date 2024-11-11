@@ -1,0 +1,27 @@
+<!-- create_poll.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Poll</title>
+</head>
+<body>
+    <h1>Create a New Poll</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <h2>Poll Details</h2>
+        {{ poll_form.as_p }}  <!-- Render poll form -->
+
+        <h2>Question Details</h2>
+        {{ question_form.as_p }}  <!-- Render question form -->
+
+        <h2>Option Details</h2>
+        {{ option_form.as_p }}  <!-- Render option form -->
+
+        <button type="submit">Create Poll</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- quiz_questions_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Questions</title>
+</head>
+<body>
+    <h1>Quiz Questions</h1>
+    <table border="1">
+        <tr>
+            <th>Question</th>
+            <th>Option A</th>
+            <th>Option B</th>
+            <th>Option C</th>
+            <th>Option D</th>
+            <th>Correct Option</th>
+        </tr>
+        {% for question in questions %}
+        <tr>
+            <td>{{ question.question }}</td>
+            <td>{{ question.option_a }}</td>
+            <td>{{ question.option_b }}</td>
+            <td>{{ question.option_c }}</td>
+            <td>{{ question.option_d }}</td>
+            <td>{{ question.correct_option }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
